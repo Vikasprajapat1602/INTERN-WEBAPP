@@ -76,16 +76,24 @@ The React app will run on `http://localhost:5173`.
 
 ```bash
 cd server
-python -m venv env
-source env/bin/activate  # Windows: env\Scripts\activate
-pip install -r requirements.txt
+# (Optional but recommended) Create a virtual environment
+python -m venv venv
+# Activate it
+# For Windows:
+venv\Scripts\activate
+# For Linux/macOS:
+source venv/bin/activate
 
-# Run migrations and start server
+# Install required packages (create requirements.txt first if needed)
+pip install django djangorestframework django-cors-headers
+
+# Apply database migrations and run the server
 python manage.py migrate
 python manage.py runserver
 ```
 
 The Django server will run on `http://localhost:8000`.
+
 
 ---
 
@@ -93,7 +101,6 @@ The Django server will run on `http://localhost:8000`.
 
 - 📝 **Intern/Volunteer Registration Form**
 - 🧑‍💻 **Admin Dashboard** to view applicant data
-- 📊 **Charts and Reports** using Recharts
 - 🎨 Modern, responsive UI using Tailwind CSS
 - 🔒 Secure data submission via Django REST API
 
