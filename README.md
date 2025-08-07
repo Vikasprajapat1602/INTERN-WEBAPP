@@ -1,4 +1,4 @@
-# INTERN WEBAPP 
+# 🚀 INTERN WEBAPP 
 
 A full-stack intern management portal built using **React (Vite)** for the frontend and **Django** for the backend.  
 This project is developed as part of an internship assignment and helps manage intern/volunteer registrations, and admin panel to view and manage applicants.
